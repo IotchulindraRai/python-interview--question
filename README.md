@@ -1,123 +1,532 @@
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
-* [Python基础](#python基础)
-    * 1、文件操作
-        * 1.1、有一个jsonline格式的文件file.txt大小约为10K
-        * 1.2、补充缺失的代码？
-    * 2、模块与包
-        *   2.1输入日期，判断这一天是这一年的第几天？
-        *   2.2打乱一个排好序的list对象 alist？
-    *   3、数据类型
-        *   3.1、现有字典 d={‘a’:24，‘g’:52，‘i’:12，‘k’:33}请按value值进行
-        *   3.2、字典推导式？
-        *   3.3、请反转字符串“aStr”?
-        *   3.4、将字符串"k:1|k1:2|k2:3|k3:4"，处理成字典：{k:1， k1:2， ...
-        *   3.5、请按alist中元素的age由大到小排序
-        *   3.6下面代码的输出结果将是什么？
-        *   3.7、写一个列表生成式，产生一个公差为11的等差数列
-        *   3.8、给定两个列表，怎么找出他们相同的元素和不同的元素?
-        *   3.9、请写出一段Python代码实现删除一个list里面的重复元素?
-        *   3.10、给定两个list A ,B，请用找出 A ,B中相同与不同的元素
-*   4、企业面试题
-    *   4.1、Python新式类和经典类的区别？
-    *   4.2、python中内置的数据结构有几种？
-    *   4.3、Python如何实现单例模式？请写出两种实现方法
-    *   4.4、反转一个整数，例如-123-->-321,Python语言实现
-    *   4.5、设计实现遍历目录与子目录，抓取.pyc文件
-    *   4.6、一行代码实现1-100之和
-    *   4.7、Python-遍历列表时删除元素的正确做法
-    *   4.8、字符串的操作题目
-    *   4.9、可变类型和不可变类型
-    *   4.10、is和==有什么区别？
-    *   4.11、求出列表所有奇数并构造新列表
-    *   4.12、用一行python代码写出1+2+3+10248
-    *   4.13、Python中变量的作用域？（变量查找顺序）
-    *   4.14、字符串”123″转换成123，不使用内置api，例如int（）
-    *   4.15、Given an array of integers
-    *   4.16、python代码实现删除一个list里面的重复元素
-    *   4.17、统计一个文本中单词频次最高的10个单词？
-    *   4.18、请写出一个函数满足以下条件
-    *   4.19、使用单一的列表生成式来产生一个新的列表
-    *   4.20、用一行代码生成[1,4,9,16,25,36,49,64,81,100]
-    *   4.21、输入某年某月某日，判断这一天是这一年的第几天？
-    *   4.22、两个有序列表，l1,l2，对这两个列表进行合并不可使用extend
-    *   4.23、给定一个任意长度数组，实现一个函数
-    *   4.23、写一个函数找出一个整数数组中，第二大的数
-    *   4.24、阅读一下代码他们的输出结果是什么？
-    *   4.25、统计一段字符串中字符出现的次数
-    *   4.26、super函数的具体用法和场景
-*   二、Python高级
-    *   1、元类
-        *   1.1、Python中类方法、类实例方法、静态方法有何区别？
-        *   1.2、super函数的具体用法和场景？
-        *   1.3、历一个object的所有属性，并print每一个属性名？
-        *   1.4、写一个类，并让它尽可能多的支持操作符？
-        *   1.5、介绍Cpython，Pypy Cpython Numba各有什优缺点
-        *   1.6、请描述抽象类和接口类的区别和联系？
-        *   1.7、Python中如何动态获取和设置对象的属性？
-    *   2、内存管理与垃圾回收机制
-        *   2.1、哪些操作会导致Python内存溢出，怎么处理？
-        *   2.2、关于 Python内存管理,下列说法错误的是(B)
-        *   2.3、Python的内存管理机制及调优手段？
-        *   2.4、内存泄露是什么？如何避免？
-    *   3、函数
-        *   3.1、python常见的列表推导式？
-        *   3.2、简述read、readline、readlines的区别？
-        *   3.3、什么是Hash（散列函数）？
-        *   3.4、python函数重载机制？
-        *   3.5、写一个函数找出一个整数数组中，第二大的数
-        *   3.6、手写一个判断时间的装饰器
-        *   3.7、使用Python内置的filter()方法来过滤？
-        *   3.8、编写函数的4个原则
-        *   3.9、函数调用参数的传递方式是值传递还是引用传递？
-        *   3.10、如何在function里面设置一个全局变量
-        *   3.11、对缺省参数的理解 ？
-        *   3.12、Mysql怎么限制IP访问？
-        *   3.13、带参数的装饰器?
-        *   3.14、为什么函数名字可以当做参数用?
-        *   3.15、Python中pass语句的作用是什么？
-        *   3.16、有这样一段代码，print c会输出什么，为什么？
-        *   3.17、交换两个变量的值？
-        *   3.18、map函数和reduce函数？
-        *   3.19、回调函数，如何通信的?
-        *   3.20、Python主要的内置数据类型都有哪些？ print dir( ‘a ’) 的输出？
-        *   3.21、map(lambda x:xx，[y for y in range(3)])的输出？
-        *   3.22、 hasattr() getattr() setattr() 函数使用详解？
-        *   3.23、一句话解决阶乘函数？
-        *   3.24、什么是lambda函数？ 有什么好处？
-        *   3.25、递归函数停止的条件？
-        *   3.26、下面这段代码的输出结果将是什么？请解释。
-        *   3.27、什么是lambda函数？它有什么好处？写一个匿名函数求两个数的
-    *   4、设计模式
-        *   4.1、对设计模式的理解，简述你了解的设计模式？
-        *   4.2、请手写一个单例
-        *   4.3、单例模式的应用场景有哪些？
-        *   4.4、Python 如何实现单例模式？请写出两种实现方法？
-        *   4.5、对装饰器的理解 ，并写出一个计时器记录方法执行性能的装饰器？
-        *   4.6、解释一下什么是闭包?
-        *   4.7、函数装饰器有什么作用？
-        *   4.8、生成器、迭代器的区别？
-        *   4.9 X是什么类型？
-        *   4.10、请用“一行代码”实现将1-N的整数列表以3为单位分组
-        *   4.11、Python中yield的用法？
-    *   5、面向对象
-        *   5.1、Python中的可变对象和不可变对象？
-        *   5.2、
-        *   5.3、Python的魔法方法
-        *   5.4、面向对象中怎么实现只读属性?
-        *   5.5、谈谈你对面向对象的理解？
-    *   6、正则表达式
-        *   6.1、请写出一段代码用正则匹配出ip？
-        *   6.2、a = “abbbccc”，用正则匹配为abccc,不管有多少b，就出现一次？
-        *   6.3、Python字符串查找和替换？
-        *   6.4、 用Python匹配HTML g tag的时候，<.> 和 <.*?> 有什么区别
-        *   6.5、正则表达式贪婪与非贪婪模式的区别？
-        *   6.6、写出开头匹配字母和下划线，末尾是数字的正则表达式？
-        *   6.7、正则表达式操作
-        *   6.8、请匹配出变量A 中的json字符串。
-        *   6.9、怎么过滤评论中的表情？
-        *   6.10、简述Python里面search和match的区别
-        *   6.11、请写出匹配ip的Python正则表达式
-        *   6.12、Python里match与search的区别？
+* [Python Basics](#python-basics)
+    * 1. File Operations
+        * **1.1. There's a jsonline format file file.txt with a size of about 10K.**
+            * **Answer:** A jsonline file is a text file where each line is a valid JSON object. You can use Python's `json` module to parse the file.
+        * **1.2. Complete the missing code?**
+            * **Answer:** Please provide the code snippet, and I can help complete it.
+    * 2. Modules and Packages
+        * **2.1. Input a date and determine the day of the year for that date?**
+            * **Answer:** 
+                ```python
+                from datetime import datetime
+                date_input = input("Enter a date (YYYY-MM-DD): ")
+                date_obj = datetime.strptime(date_input, "%Y-%m-%d")
+                day_of_year = date_obj.timetuple().tm_yday
+                print(f"Day of the year: {day_of_year}")
+                ```
+        * **2.2. Shuffle a sorted list object alist?**
+            * **Answer:**
+                ```python
+                import random
+                alist = [1, 2, 3, 4, 5]
+                random.shuffle(alist)
+                print(alist)
+                ```
+    * 3. Data Types
+        * **3.1. Given the dictionary d={'a':24, 'g':52, 'i':12, 'k':33}, please sort by the value.**
+            * **Answer:**
+                ```python
+                d = {'a':24, 'g':52, 'i':12, 'k':33}
+                sorted_d = dict(sorted(d.items(), key=lambda item: item[1]))
+                print(sorted_d)
+                ```
+        * **3.2. Dictionary comprehension?**
+            * **Answer:** Dictionary comprehension allows creating dictionaries in a single line using a syntax like:
+                ```python
+                d = {key: value for key, value in iterable}
+                ```
+        * **3.3. Reverse the string "aStr"?**
+            * **Answer:** 
+                ```python
+                aStr = "Hello"
+                reversed_str = aStr[::-1]
+                print(reversed_str)
+                ```
+        * **3.4. Convert the string "k:1|k1:2|k2:3|k3:4" into a dictionary: {k:1, k1:2, k2:3, k3:4}.**
+            * **Answer:**
+                ```python
+                s = "k:1|k1:2|k2:3|k3:4"
+                result = dict(item.split(":") for item in s.split("|"))
+                print(result)
+                ```
+        * **3.5. Sort elements in alist by age in descending order.**
+            * **Answer:** 
+                ```python
+                alist = [{'name': 'Alice', 'age': 30}, {'name': 'Bob', 'age': 25}]
+                sorted_list = sorted(alist, key=lambda x: x['age'], reverse=True)
+                print(sorted_list)
+                ```
+        * **3.6. What will be the output of the following code?**
+            * **Answer:** Please provide the code snippet, and I'll explain the output.
+        * **3.7. Write a list comprehension to generate an arithmetic sequence with a common difference of 11.**
+            * **Answer:**
+                ```python
+                sequence = [x for x in range(0, 101, 11)]
+                print(sequence)
+                ```
+        * **3.8. Given two lists, how do you find the common and different elements?**
+            * **Answer:**
+                ```python
+                list1 = [1, 2, 3, 4]
+                list2 = [3, 4, 5, 6]
+                common = list(set(list1) & set(list2))
+                different = list(set(list1) ^ set(list2))
+                print(f"Common: {common}, Different: {different}")
+                ```
+        * **3.9. Write Python code to remove duplicate elements from a list.**
+            * **Answer:**
+                ```python
+                my_list = [1, 2, 2, 3, 4, 4]
+                unique_list = list(set(my_list))
+                print(unique_list)
+                ```
+        * **3.10. Given two lists A and B, how to find common and different elements?**
+            * **Answer:** See answer for **3.8**.
+    * 4. Company Interview Questions
+        * **4.1. Difference between Python new-style class and classic class?**
+            * **Answer:** New-style classes are subclasses of `object`, while classic classes are not. New-style classes support descriptors, metaclasses, etc.
+        * **4.2. How many built-in data structures are there in Python?**
+            * **Answer:** Python has several built-in data structures, including lists, tuples, sets, dictionaries, and strings.
+        * **4.3. How do you implement the Singleton pattern in Python? Provide two methods.**
+            * **Answer:**
+                1. Using a class variable to hold the instance.
+                2. Using a metaclass to enforce a single instance.
+        * **4.4. Reverse an integer, e.g., -123 → -321, implemented in Python.**
+            * **Answer:**
+                ```python
+                def reverse_int(n):
+                    sign = -1 if n < 0 else 1
+                    n = abs(n)
+                    reversed_n = int(str(n)[::-1])
+                    return sign * reversed_n
+                print(reverse_int(-123))
+                ```
+        * **4.5. Design a function to traverse directories and subdirectories to grab .pyc files.**
+            * **Answer:**
+                ```python
+                import os
+                def find_pyc_files(directory):
+                    pyc_files = []
+                    for root, dirs, files in os.walk(directory):
+                        for file in files:
+                            if file.endswith('.pyc'):
+                                pyc_files.append(os.path.join(root, file))
+                    return pyc_files
+                ```
+        * **4.6. Write a one-liner to calculate the sum of numbers from 1 to 100.**
+            * **Answer:**
+                ```python
+                print(sum(range(1, 101)))
+                ```
+        * **4.7. Correct way to remove elements from a list while iterating in Python.**
+            * **Answer:** Use list comprehension or iterate in reverse order.
+                ```python
+                my_list = [1, 2, 3, 4]
+                my_list = [x for x in my_list if x != 2]
+                ```
+        * **4.8. String manipulation problems.**
+            * **Answer:** Please provide the specific question.
+        * **4.9. Mutable and Immutable types in Python.**
+            * **Answer:** Lists, sets, and dictionaries are mutable, while strings, tuples, and integers are immutable.
+        * **4.10. What is the difference between is and ==?**
+            * **Answer:** `is` checks for identity (whether two references point to the same object), while `==` checks for equality (whether the values are the same).
+        * **4.11. Find all odd numbers in a list and construct a new list.**
+            * **Answer:**
+                ```python
+                numbers = [1, 2, 3, 4, 5]
+                odd_numbers = [num for num in numbers if num % 2 != 0]
+                print(odd_numbers)
+                ```
+        * **4.12. Write one line of Python code to calculate 1 + 2 + 3 + ... + 10248.**
+            * **Answer:** 
+                ```python
+                print(sum(range(1, 10249)))
+                ```
+        * **4.13. What is variable scope in Python? (Variable lookup order)**
+            * **Answer:** Variable scope refers to where a variable is accessible. The lookup order is: Local -> Enclosing -> Global -> Built-in.
+        * **4.14. Convert the string "123" into an integer without using built-in APIs like int().**
+            * **Answer:**
+                ```python
+                string = "123"
+                result = sum([int(digit) * (10 ** i) for i, digit in enumerate(reversed(string))])
+                print(result)
+                ```
+        * **4.15. Given an array of integers.**
+            * **Answer:** Please provide the complete question.
+        * **4.16. Python code to remove duplicate elements from a list.**
+            * **Answer:** See answer for **3.9**.
+        * **4.17. Find the top 10 most frequent words in a text.**
+            * **Answer:** Use the `collections.Counter` to count words and retrieve the top 10.
+                ```python
+                from collections import Counter
+                text = "your text here"
+                word_counts = Counter(text.split())
+                print(word_counts.most_common(10))
+                ```
+        * **4.18. Write a function that satisfies the following condition.**
+            * **Answer:** Please provide the condition to be satisfied.
+        * **4.19. Use a single list comprehension to generate a new list.**
+            * **Answer:** Please provide the full list generation requirement.
+        * **4.20. Design a function that checks whether a given string is a valid email address.**
+            * **Answer:** You can use regex to validate the email.
+                ```python
+                import re
+                def is_valid_email(email):
+                    pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                    return bool(re.match(pattern, email))
+                ```
+
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+* Web Crawling
+    * **1.1. List at least three popular large databases currently.**
+      - **Answer:** 
+        - MySQL
+        - MongoDB
+        - PostgreSQL
+    * **1.2. List the Python network crawling packages you have used.**
+      - **Answer:** 
+        - Requests
+        - urllib
+        - Selenium
+        - Scrapy
+    * **1.3. List the Python network crawling data parsing packages you have used.**
+      - **Answer:** 
+        - BeautifulSoup
+        - lxml
+        - PyQuery
+    * **1.4. After crawling data, which database do you use to store the data, and why?**
+      - **Answer:** 
+        - I typically use **MySQL** for structured data that requires relational storage. For large, unstructured datasets, **MongoDB** is preferred due to its flexibility with document storage. **Redis** can be used for caching or storing temporary data.
+    * **1.5. What web crawling frameworks or modules have you used? What are the pros and cons?**
+      - **Answer:** 
+        - **Scrapy**: Efficient, highly extensible, supports asynchronous scraping. However, it has a steeper learning curve.
+        - **Selenium**: Useful for crawling dynamic websites. It is slower compared to Scrapy but works well with JavaScript-heavy pages.
+    * **1.6. Is it better to use multiprocessing or multithreading for writing a crawler?**
+      - **Answer:** 
+        - **Multiprocessing** is usually better for CPU-bound tasks since it runs processes in separate memory spaces. **Multithreading** is preferable for I/O-bound tasks like web scraping, where the task waits for external responses.
+    * **1.7. Common anti-crawling methods and countermeasures?**
+      - **Answer:** 
+        - **Rate limiting**: Implement delays or use proxies to avoid getting blocked.
+        - **CAPTCHA**: Use CAPTCHA-solving tools like 2Captcha or bypass with Selenium for automated solving.
+        - **IP blocking**: Use rotating proxies or VPNs to change IP addresses.
+    * **1.8. Which parsers are most commonly used for parsing web pages?**
+      - **Answer:** 
+        - **BeautifulSoup**
+        - **lxml**
+        - **html5lib**
+    * **1.9. How to solve login pages that limit IPs, cookies, and sessions simultaneously?**
+      - **Answer:** 
+        - Use rotating IP proxies, session management techniques, and ensure the usage of valid cookies. In cases of highly restricted login systems, it may be necessary to use a headless browser like **Selenium** to simulate a real user login process.
+    * **1.10. How do you handle CAPTCHA solutions?**
+      - **Answer:** 
+        - Use CAPTCHA-solving services like **2Captcha**, **Anti-Captcha**, or use machine learning techniques to recognize CAPTCHAs if you have a high volume.
+    * **1.11. Most commonly used databases, and your understanding of them?**
+      - **Answer:** 
+        - **MySQL**: A relational database that uses SQL for querying data.
+        - **MongoDB**: A NoSQL database that uses collections and documents to store data, suitable for unstructured or semi-structured data.
+        - **Redis**: An in-memory data store, used for caching and sessions.
+    * **1.12. What crawling middlewares have you written?**
+      - **Answer:** 
+        - I have written middlewares for proxy rotation, handling retries, and managing user-agent spoofing to avoid detection.
+    * **1.13. How to crack the "Geetest" sliding CAPTCHA?**
+      - **Answer:** 
+        - Use **Selenium** combined with image recognition libraries to solve or bypass the Geetest CAPTCHA.
+    * **1.14. How often do you crawl, and how is the crawled data stored?**
+      - **Answer:** 
+        - Crawling frequency depends on the website's content updates. For example, news websites may be crawled every hour, while product websites may be updated once a day. Data is typically stored in databases like MySQL or MongoDB.
+    * **1.15. How do you handle expired cookies?**
+      - **Answer:** 
+        - Regularly refresh cookies by logging in again if necessary, and ensure the cookies are valid before sending requests.
+    * **1.16. How do you handle dynamic loading when high timeliness is required?**
+      - **Answer:** 
+        - Use **Selenium** with proper waits or use **Scrapy**'s asynchronous features to scrape the content as it loads dynamically.
+    * **1.17. What are the advantages and disadvantages of HTTPS?**
+      - **Answer:** 
+        - **Advantages**: Secure communication, encrypted data transmission, and authenticity verification.
+        - **Disadvantages**: Increased computational overhead, slower speeds compared to HTTP.
+    * **1.18. How does HTTPS ensure secure data transmission?**
+      - **Answer:** 
+        - HTTPS uses SSL/TLS protocols to encrypt the data transferred between the client and the server, ensuring that data cannot be intercepted or tampered with.
+    * **1.19. What are TTL, MSL, and RTT?**
+      - **Answer:** 
+        - **TTL (Time to Live)**: Determines the lifespan of a packet in a network before it is discarded.
+        - **MSL (Maximum Segment Lifetime)**: The maximum time a TCP segment can remain in the network.
+        - **RTT (Round Trip Time)**: The time it takes for a signal to travel from the source to the destination and back.
+    * **1.20. What do you know about Selenium and PhantomJS?**
+      - **Answer:** 
+        - **Selenium**: A tool for automating web browsers, useful for scraping dynamic content.
+        - **PhantomJS**: A headless browser that can be controlled via scripts, useful for scraping without opening a visible browser.
+    * **1.21. How do you use proxies?**
+      - **Answer:** 
+        - Use rotating proxies to avoid detection and blocking. Services like **ScraperAPI**, **ProxyMesh**, or custom proxy rotations are commonly used.
+    * **1.22. How do you store data in databases (e.g., Redis, MySQL)?**
+      - **Answer:** 
+        - Store crawled data in a structured format in **MySQL** or use **Redis** for temporary data storage.
+    * **1.23. How do you monitor the status of your crawler?**
+      - **Answer:** 
+        - Use logging and alerting systems to monitor errors, success rates, and completion of tasks. Tools like **Celery** or **Scrapy Cloud** can provide task monitoring.
+    * **1.24. Describe the mechanism of the Scrapy framework.**
+      - **Answer:** 
+        - **Scrapy** works by sending requests to the target website, processing the responses through spider functions, and saving the data into a database or file using pipelines.
+    * **1.25. What is your understanding of Scrapy?**
+      - **Answer:** 
+        - **Scrapy** is an open-source framework that facilitates the scraping of websites by providing robust support for concurrency, scraping rules, data pipelines, and exporting scraped data.
+    * **1.26. How do you send a POST request in Scrapy (write the code)?**
+      - **Answer:** 
+        ```python
+        def start_requests(self):
+            yield scrapy.FormRequest(
+                'http://example.com/login', 
+                formdata={'username': 'user', 'password': 'pass'},
+                callback=self.parse_after_login
+            )
+        ```
+    * **1.27. How do you monitor the status of your crawler?**
+      - **Answer:** 
+        - Use tools like **Scrapy's built-in statistics** or integrate with third-party systems like **Elasticsearch** or **Prometheus** for real-time monitoring.
+    * **1.28. How do you determine if a website has been updated?**
+      - **Answer:** 
+        - Track specific content changes or use webhooks that notify when content is updated.
+    * **1.29. How do you bypass hotlinking protection for image and video crawling?**
+      - **Answer:** 
+        - Use **random user-agents** and **proxy rotation** to simulate real users.
+    * **1.30. How much data do you crawl? How often do you crawl?**
+      - **Answer:** 
+        - The amount of data crawled depends on the project. Typically, I crawl several GB of data per day for large websites, adjusting frequency based on the website's update cycle.
+    * **1.31. What database do you use to store crawled data? Did you deploy it yourself? How did you deploy it?**
+      - **Answer:** 
+        - I store data in **MySQL** for structured data and deploy the database on cloud services like **AWS RDS** for scalability and management.
+    * **1.32. Incremental crawling.**
+      - **Answer:** 
+        - **Incremental crawling** ensures that only new or updated data is scraped by keeping track of previously crawled data, often by using timestamps or hashes.
+    * **1.33. How do you remove duplicates from crawled data? Explain the algorithm used in Scrapy.**
+      - **Answer:** 
+        - Scrapy uses a **deduplication filter** in its `dupefilter` system that stores URLs that have already been scraped, ensuring each URL is processed only once.
+    * **1.34. Advantages and disadvantages of Scrapy?**
+      - **Answer:** 
+        - **Advantages**: Fast, flexible, supports asynchronous processing, and integrates well with many databases.
+        - **Disadvantages**: Steep learning curve for beginners and can be overkill for small projects.
+    * **1.35. How do you set crawl depth in Scrapy?**
+      - **Answer:** 
+        - Set the **DEPTH_LIMIT** setting in Scrapy to control the maximum depth of the crawl.
+    * **1.36. What is the difference between Scrapy and Scrapy-Redis? Why use Redis?**
+      - **Answer:** 
+        - **Scrapy-Redis** is an extension of Scrapy that allows for distributed crawling using Redis. Redis stores crawled URLs and task queues, enabling parallel crawlers to work efficiently.
+    * **1.37. What problems does distributed crawling mainly solve?**
+      - **Answer:** 
+        - Distributed crawling solves scalability issues, increases crawl speed, and allows for the handling of large-scale web scraping tasks across multiple machines.
+    * **1.38. What is distributed storage?**
+      - **Answer:** 
+        - **Distributed storage** refers to storing data across multiple physical machines to improve scalability, redundancy, and availability. Examples include **HDFS** and **Amazon S3**.
+    * **1.39. What distributed crawling solutions do you know?**
+      - **Answer:** 
+        - Solutions like **Scrapy-Redis**, **Apache Nutch**, and **Heritrix** support distributed web crawling.
+    * **1.40. Have you worked with any distributed crawlers other than Scrapy-Redis?**
+      - **Answer:** 
+        - Yes, I have worked with **Apache Nutch** and **Heritrix** for large-scale web crawling.
+        - 
+<!-- markdown-toc end -->
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+* Database
+    * 1. MySQL
+        * 1.1. **Primary key, superkey, candidate key, foreign key**
+            * **Primary key:** A primary key uniquely identifies each record in a table. It must contain unique values and cannot have NULLs.
+            * **Superkey:** A superkey is a set of one or more attributes that can uniquely identify a record. A primary key is a superkey, but not all superkeys are primary keys.
+            * **Candidate key:** A candidate key is a minimal superkey, i.e., it uniquely identifies a record but does not contain any unnecessary attributes.
+            * **Foreign key:** A foreign key is a column (or set of columns) that links one table to another, establishing a relationship between the two.
+        * 1.2. **Purpose of views, and can views be modified?**
+            * **Purpose of views:** Views are used to simplify complex queries, provide a layer of abstraction, and improve security by limiting access to specific data in a table.
+            * **Can views be modified?** Yes, views can be modified if they are updatable views. However, not all views are updatable, especially if they involve joins, aggregates, or non-trivial calculations.
+        * 1.3. **Difference between DROP, DELETE, and TRUNCATE**
+            * **DROP:** Removes a table or database completely, including its structure and data.
+            * **DELETE:** Removes records from a table based on a condition, and it can be rolled back if wrapped in a transaction.
+            * **TRUNCATE:** Removes all records from a table, but the table structure remains. It cannot be rolled back in some databases.
+        * 1.4. **Working principles and types of indexes**
+            * Indexes are used to speed up query processing by providing a fast lookup for data in a table. They can be based on one or more columns.
+            * **Types of indexes:** Single-column index, composite index, unique index, full-text index, and spatial index.
+        * 1.5. **Types of joins**
+            * **INNER JOIN:** Returns records that have matching values in both tables.
+            * **LEFT JOIN (or LEFT OUTER JOIN):** Returns all records from the left table, and the matched records from the right table. Unmatched rows in the right table will have NULL values.
+            * **RIGHT JOIN (or RIGHT OUTER JOIN):** Returns all records from the right table, and the matched records from the left table. Unmatched rows in the left table will have NULL values.
+            * **FULL JOIN (or FULL OUTER JOIN):** Returns records when there is a match in one of the tables.
+            * **CROSS JOIN:** Returns the Cartesian product of two tables.
+        * 1.6. **Ideas for database optimization**
+            * Use indexing to speed up queries.
+            * Normalize the database to reduce redundancy.
+            * Denormalize in certain cases where performance is crucial.
+            * Optimize queries by avoiding unnecessary subqueries or joins.
+            * Use database partitioning to distribute data across multiple locations.
+        * 1.7. **Difference between stored procedures and triggers**
+            * **Stored procedure:** A stored procedure is a precompiled collection of SQL statements that can be executed on demand. It can be called explicitly by the user.
+            * **Trigger:** A trigger is a set of actions automatically invoked by the database in response to certain events (INSERT, UPDATE, DELETE).
+        * 1.8. **What are pessimistic and optimistic locks?**
+            * **Pessimistic lock:** Locks a resource as soon as it is accessed, preventing others from modifying it until the lock is released.
+            * **Optimistic lock:** Assumes that no conflicts will occur and allows multiple transactions to access the same resource. If a conflict occurs, it handles it when the changes are committed.
+        * 1.9. **Which MySQL engines do you commonly use? What are the differences between them?**
+            * **InnoDB:** The default storage engine in MySQL. It supports transactions, foreign keys, and ACID compliance.
+            * **MyISAM:** An older storage engine, faster for read-heavy workloads but does not support transactions or foreign keys.
+            * **MEMORY:** Stores data in memory for fast access but is volatile.
+            * **ARCHIVE:** Optimized for storing large amounts of data with minimal overhead.
+    * 2. Redis
+        * 2.1. **How do you solve Redis downtime?**
+            * To solve Redis downtime, you can implement Redis replication with a master-slave setup and enable automatic failover using Redis Sentinel.
+        * 2.2. **Difference between Redis and Memcached, and use cases**
+            * **Redis:** An in-memory data store that supports complex data types (strings, hashes, lists, sets). It is used for caching, session storage, pub/sub systems, and queues.
+            * **Memcached:** A high-performance, distributed memory object caching system, mainly used for caching simple key-value pairs.
+        * 2.3. **Redis cluster solutions, and available options**
+            * Redis supports clustering to distribute data across multiple nodes. Redis Cluster provides automatic sharding and high availability.
+        * 2.4. **How does Redis's eviction process work?**
+            * Redis uses an eviction policy to remove keys from memory when it reaches its memory limit. Common eviction policies include LRU (Least Recently Used), LFU (Least Frequently Used), and random eviction.
+    * 3. MongoDB
+        * 3.1. **Command for updating multiple records in MongoDB?**
+            * Use `db.collection.updateMany(filter, update)` to update multiple documents that match the filter.
+        * 3.2. **When will MongoDB scale to multiple shards?**
+            * MongoDB scales to multiple shards when data grows too large to be stored on a single server, or when read/write operations become a bottleneck.
+* Testing
+    * 1. **Purpose of writing test plans**
+        * Test plans define the scope, approach, resources, and schedule for testing activities. They provide a systematic approach to ensure that all functionalities are tested thoroughly.
+    * 2. **Testing keyword triggering modules**
+        * A keyword triggering module executes test cases based on specific input or actions that trigger the test process automatically.
+    * 3. **Common online test question repositories**
+        * Websites like LeetCode, HackerRank, GeeksforGeeks, and Stack Overflow contain a vast repository of programming and testing-related questions.
+    * 4. **Tasks of testing personnel in the software development process**
+        * Testing personnel are responsible for creating test cases, executing tests, reporting defects, and ensuring the quality of software.
+    * 5. **What information does a software bug report include?**
+        * A bug report typically includes the bug description, steps to reproduce, expected and actual results, environment details, and any logs or screenshots.
+    * 6. **Pros and cons of black-box testing and white-box testing**
+        * **Black-box testing:** Focuses on functionality without knowledge of internal code. Pros: easy to use, user-centric. Cons: limited coverage.
+        * **White-box testing:** Involves testing internal structures and code. Pros: thorough and detailed. Cons: requires coding knowledge and is time-consuming.
+    * 7. **List of software testing types you know (at least 5)**
+        * Unit testing, Integration testing, System testing, Acceptance testing, Regression testing.
+    * 8. **Difference between Alpha and Beta testing**
+        * **Alpha testing:** Done by the internal team before releasing the software to external users.
+        * **Beta testing:** Done by a limited number of external users to gather feedback and identify issues before the official release.
+    * 9. **Examples of bugs and what a bug report should contain**
+        * **Examples of bugs:** UI layout issues, functionality errors, performance problems.
+        * A bug report should contain: title, description, steps to reproduce, expected result, actual result, environment, screenshots, and logs.
+* Data Structures
+    * 1.1. **Find the number in an array that appears more than half of the time – Python version**
+        ```python
+        def majority_element(nums):
+            count = {}
+            for num in nums:
+                count[num] = count.get(num, 0) + 1
+                if count[num] > len(nums) // 2:
+                    return num
+        ```
+    * 1.2. **Find prime numbers up to 100**
+        ```python
+        def primes_up_to_100():
+            primes = []
+            for num in range(2, 101):
+                if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1)):
+                    primes.append(num)
+            return primes
+        ```
+    * 1.3. **Longest substring without repeating characters – Python implementation**
+        ```python
+        def length_of_longest_substring(s):
+            chars = {}
+            left = 0
+            max_len = 0
+            for right in range(len(s)):
+                if s[right] in chars:
+                    left = max(left, chars[s[right]] + 1)
+                chars[s[right]] = right
+                max_len = max(max_len, right - left + 1)
+            return max_len
+        ```
+    * 1.4. **How to get 3 liters of water using two 5/6 liter jugs**
+        * Fill one jug, then pour it into the other jug until it's full. Continue this process until you have 3 liters in one jug.
+    * 1.5. **What is MD5 encryption and its characteristics?**
+        * MD5 (Message Digest Algorithm 5) is a cryptographic hash function that produces a 128-bit hash value. It's fast but not secure for cryptographic purposes due to vulnerabilities.
+    * 1.6. **What is symmetric and asymmetric encryption?**
+        * **Symmetric encryption:** Uses the same key for encryption and decryption.
+        * **Asymmetric encryption:** Uses a public key for encryption and a private key for decryption.
+    * 1.7. **Bubble sort algorithm**
+        * Bubble sort repeatedly steps through the list, compares adjacent items, and swaps them if they are in the wrong order.
+    * 1.8. **Quick sort algorithm**
+        * Quick sort works by selecting a pivot element and partitioning the array into two subarrays, recursively sorting them.
+    * 1.9. **How to detect cycles in a singly linked list?**
+        * Use two pointers: one moves two steps at a time, and the other moves one step at a time. If they meet, a cycle exists.
+    * 1.10. **What sorting algorithms do you know?**
+        * Bubble sort, Merge sort, Quick sort, Insertion sort, Selection sort, Heap sort.
+    * 1.11. **Fibonacci sequence**
+        * The Fibonacci sequence is a series where each number is the sum of the two preceding ones.
+    * 1.12. **How to reverse a singly linked list?**
+        * Iterate through the list, reversing the direction of each link until the entire list is reversed.
+    * 1.13. **Frog jump problem**
+        * The frog can jump a maximum distance of k steps at a time. Use dynamic programming to calculate the minimum cost for each step.
+    * 1.14. **Two sum problem**
+        * Given an array of integers and a target sum, find two numbers that add up to the target. Use a hash map to store the difference.
+    * 1.15. **Search in rotated sorted array**
+        * Use binary search to find the pivot point and determine which part of the array is sorted. Perform binary search on the sorted part.
+    * 1.16. **Implement a stack in Python**
+        ```python
+        class Stack:
+            def __init__(self):
+                self.stack = []
+            def push(self, value):
+                self.stack.append(value)
+            def pop(self):
+                return self.stack.pop() if self.stack else None
+            def peek(self):
+                return self.stack[-1] if self.stack else None
+        ```
+    * 1.17. **Write a binary search function**
+        ```python
+        def binary_search(arr, target):
+            left, right = 0, len(arr) - 1
+            while left <= right:
+                mid = (left + right) // 2
+                if arr[mid] == target:
+                    return mid
+                elif arr[mid] < target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            return -1
+        ```
+    * 1.18. **What is the time complexity of 'in' operation in a set, and why?**
+        * The time complexity is O(1) on average because sets use a hash table for storage.
+    * 1.19. **Sort a list with n integers between 0 and 1000**
+        ```python
+        def counting_sort(arr):
+            count = [0] * 1001
+            for num in arr:
+                count[num] += 1
+            result = []
+            for i, freq in enumerate(count):
+                result.extend([i] * freq)
+            return result
+        ```
+    * 1.20. **Object-oriented programming, implementing a new class using composition and inheritance**
+        ```python
+        class Engine:
+            def start(self):
+                print("Engine started")
+        
+        class Car:
+            def __init__(self, engine):
+                self.engine = engine
+            def drive(self):
+                self.engine.start()
+                print("Car is driving")
+        ```
+* Artificial Intelligence
+    * 1.1. **Find high-frequency words in a 1GB file**
+        * You can use Python with the `collections.Counter` class to efficiently process large files and count word frequencies.
+    * 1.2. **Count high-frequency words in a file with about 10,000 lines**
+        * Use `Counter` from the `collections` module to count the frequency of words and identify the most frequent ones.
+    * 1.3. **How to find the most repeated item in massive data?**
+        * Use a streaming algorithm like the **Misra-Gries algorithm** or **Count-Min Sketch** for approximate results in large datasets.
+    * 1.4. **How to check if data exists in large datasets?**
+        * Use hash-based data structures (e.g., hash sets) or approximate algorithms like **Bloom Filters** to check for the existence of data efficiently.
+
+<!-- markdown-toc end -->
+
+
     *   7、系统编程
         *   7.1、进程总结
         *   7.2、谈谈你对多进程，多线程，以及协程的理解，项目是否用？
